@@ -1,0 +1,414 @@
+/* zeroing */
+* {
+    transition: all .5s;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #430558 0%, #650012 100%);
+}
+
+button,
+a,
+input[type='submit'] {
+    cursor: pointer;
+    outline: none;
+}
+
+/* container */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 34px;
+}
+
+.logo {
+    color: #FFD600;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav a {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFD600;
+}
+
+nav {
+    display: flex;
+    gap: 59px;
+}
+
+.banner {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_subblock {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.banner_subblock h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: white;
+    max-width: 610px;
+}
+
+.banner_subblock p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: white;
+    max-width: 512px;
+}
+
+.yellow {
+    color: #FFD600;
+}
+
+.button_one {
+    padding: 21px 40px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #DE0D33 0%, #AF0EE7 100%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-right: 22px;
+    border: none;
+}
+
+.button_two {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 21px 40px;
+    border-radius: 5px;
+    border: 3px white solid;
+    background: transparent;
+    color: white;
+}
+
+.banner_subblock_1 {
+    align-items: center;
+}
+
+.button_slide {
+    padding: 13px 20px;
+    margin-right: 8px;
+}
+
+.about_us {
+    margin-top: 120px;
+    display: flex;
+    gap: 41px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: white;
+}
+
+.about_us_block {
+    display: flex;
+    max-width: 844px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about_us p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 807px;
+    color: white;
+}
+
+.about_us_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about_us_card h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.catalog_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 41px;
+}
+
+.card {
+    padding: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    background: white;
+}
+
+.card img {
+    margin-bottom: 21px;
+}
+
+.card h2 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form_block {
+    margin-top: 199px;
+    background: white;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    margin: 0 auto;
+    max-width: 891px;
+}
+
+form p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 544px;
+    margin: 0 auto;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+form h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.width {
+    width: 544px;
+    margin: 0 auto;
+}
+
+.input {
+    max-width: 544px;
+    width: 544px;
+    padding: 25px 31px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px linear-gradient(45deg, #DE0D33 0%, #AF0EE7 100%) solid;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer_block {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    align-items: center;
+}
+
+.icon_block {
+    display: flex;
+    gap: 33px;
+}
+
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    gap: 10px;
+    z-index: 3;
+    position: relative;
+    right: 80px;
+}
+
+.burger-menu:hover .menu-line-short {
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+
+.menu-line {
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    height: 2px;
+}
+
+.menu-line-short {
+    width: 60%;
+    position: relative;
+    left: 12px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .width {
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    .input {
+        max-width: 360px;
+        width: 360px;
+    }
+
+    p {
+        padding: 5px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 80px;
+    }
+
+    .catalog {
+        margin-top: 80px;
+    }
+
+    .about_us {
+        margin-top: 80px;
+    }
+
+    .banner_img {
+        width: 370px;
+    }
+
+    .about_us_card h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .banner .button_one {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .burger {
+        width: 100vw;
+        height: 100vh;
+        background: rgb(61, 61, 61);
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+    }
+
+    .burger_block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .burger-active {
+        position: fixed;
+        right: 30%;
+        top: 40px;
+        display: flex;
+        gap: 0px;
+        height: 17px;
+    }
+
+    .burger-active .menu-line {
+        background: white;
+    }
+
+    .burger-active .menu-line:first-child {
+        transform: rotate(45deg);
+        position: relative;
+        top: 2px;
+    }
+
+    .burger-active .menu-line:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    .burger-active .menu-line-short {
+        display: none;
+    }
+
+    .burger a {
+        color: white;
+    }
+
+}
